@@ -1,0 +1,28 @@
+table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        
+        th {
+            background-color: white;
+        }
+
+       .subject1 { color: blue; font-weight: bold; }
+        .subject2 { color: orange; font-weight: bold; }
+        .subject3 { color: purple; font-weight: bold; }
+        .subject4 { color: green; font-weight: bold; }
+        .subject5 { color: red; font-weight: bold; }
+        .lunch {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            font-weight: bold;
+        }
+        .important {
+            font-weight: bold;
+        }

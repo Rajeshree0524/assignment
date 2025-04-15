@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+ @media (max-width:600px ) {
+    .navbar 
+    {
+        background-color:#555;
+        padding: 15px;
+        align-items: stretch;
+        flex-direction: column;
+    }
+ }

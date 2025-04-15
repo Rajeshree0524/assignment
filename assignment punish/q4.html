@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Practice Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form{
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+         h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: 0.3s;
+        }
+        #button{
+            background-color: aqua;
+            color: #333;
+            cursor: pointer;
+        }
+        #button:hover{
+            background-color: darkcyan;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="#">
+          <h2>Contact Us</h2>
+        
+            <label for="name">Full Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input type="number" placeholder="Enter your phone number">
+
+            <label for="country">Country</label>
+            <select id="country">
+                <option>Nepal</option>
+                <option>Bhutan</option>
+                <option>India</option>
+                <option>Thailand</option>
+                <option>Other</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea rows="4" placeholder="Write your message here..."></textarea>
+
+            <input type="submit" id="button" value="submit">
+        </form>
+    
+
+</body>
+</html>

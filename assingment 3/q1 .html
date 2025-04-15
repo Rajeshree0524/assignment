@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 60%;
+        }
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .item-1 { background-color: #00aaff; }
+        .item-2 { background-color: #ff4422; }
+        .item-3 { background-color: #0077cc; }
+        .item-4 { background-color: #ffcc33; }
+        .item-5 { background-color: #8855ff; }
+        .item-6 { background-color: #22aa22; }
+        .item-7 { background-color: #ff7744; }
+        .item-8 { background-color: #22bbbb; }
+        .item-9 { background-color: #660000; }
+
+        
+        @media (min-width: 658px) {
+            .item-1 { background-color: #ff0000; }
+            .item-3 { background-color: #0000ff; }
+            .item-4 { background-color: #ffff00; }
+            .item-5 { background-color: #ff00ff; }
+            .item-6 { background-color: #00ffff; }
+            .item-7 { background-color: #aa00ff; }
+            .item-8 { background-color: #ffaa00; }
+            .item-9 { background-color: #444444; }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item-1">1</div>
+        <div class="grid-item item-2">2</div>
+        <div class="grid-item item-3">3</div>
+        <div class="grid-item item-4">4</div>
+        <div class="grid-item item-5">5</div>
+        <div class="grid-item item-6">6</div>
+        <div class="grid-item item-7">7</div>
+        <div class="grid-item item-8">8</div>
+        <div class="grid-item item-9">9</div>
+    </div>
+</body>
+</html>
